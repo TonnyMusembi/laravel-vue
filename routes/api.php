@@ -26,4 +26,4 @@ Route::resource('orders', OrderController::class);
 Route::resource('vehicles', VehicleController::class);
 Route::resource('dashboards', DashboardController::class);
 Route::resource('categories',CategoryController::class);
-Route::resource('deliverys',DeliveryController::class);
+Route::resource('deliveries',DeliveryController::class);

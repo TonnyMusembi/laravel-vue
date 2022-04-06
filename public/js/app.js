@@ -19288,12 +19288,14 @@ __webpack_require__.r(__webpack_exports__);
     }
   }
 });
-var url = "http://laravel-vue.test/api/orders";
+var url = "http://laravel-vue.test/api/deliveries";
 fetch(url).then(function (response) {
   console.log(response);
 })["catch"](function (error) {
   console.log(error);
 });
+var array = [1, 2, 3, 3];
+console.log(array);
 
 /***/ }),
 
@@ -19351,13 +19353,19 @@ var _hoisted_2 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementV
   "class": "px-7 py-2 mx-2 font-semibold text-gray-800 bg-gray-100 rounded"
 }, " Reset "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", {
   type: "submit",
-  "class": "px-7 py-2 mx-2 font-semibold text-white bg-red-600 rounded"
+  "class": "px-7 py-2 mx-2 font-semibold text-white bg-green-600 rounded"
 }, " Submit ")])])], -1
 /* HOISTED */
 );
 
+var _hoisted_3 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", null, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", {
+  "class": ""
+}, "Order")], -1
+/* HOISTED */
+);
+
 function render(_ctx, _cache, $props, $setup, $data, $options) {
-  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, [_hoisted_1, _hoisted_2, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" </div> ")], 64
+  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, [_hoisted_1, _hoisted_2, _hoisted_3, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" </div> ")], 64
   /* STABLE_FRAGMENT */
   );
 }

@@ -34,14 +34,16 @@
                 </button>
                 <button
                     type="submit"
-                    class="px-7 py-2 mx-2 font-semibold text-white bg-red-600 rounded"
+                    class="px-7 py-2 mx-2 font-semibold text-white bg-green-600 rounded"
                 >
                     Submit
                 </button>
             </div>
         </form>
     </div>
-
+<div>
+    <button class="">Order</button>
+</div>
     <!-- </div> -->
 </template>
 <script>
@@ -63,7 +65,7 @@ export default {
         },
     },
 };
-const url = "http://laravel-vue.test/api/orders";
+const url = "http://laravel-vue.test/api/deliveries";
 fetch(url)
     .then((response) => {
         console.log(response);
@@ -71,4 +73,8 @@ fetch(url)
     .catch((error) => {
         console.log(error);
     });
+
+    const array=[1,2,3,3]
+    console.log(array);
+
 </script>
