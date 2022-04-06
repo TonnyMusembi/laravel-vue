@@ -33,4 +33,7 @@ class OrderController extends Controller
         ]);}
         return response()->json(['req' => $request]);
     }
+    public function delete(Request $requset){
+        return response()->json();
+    }
 }

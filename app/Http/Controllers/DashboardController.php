@@ -22,7 +22,6 @@ class DashboardController extends Controller
             return response()->json(['status' => 422, 'errors' => $validator->errors()]);
         } else {
 
-
         Dashboard::create([
             'vehicles' => $request->input('vehicles'),
             'orders' => $request->input('orders'),
@@ -31,7 +30,15 @@ class DashboardController extends Controller
         return response()->json(['req' => $request]);
     }
 public function create(){
-    
+
+}
+public function destroy(Request $request){
+    return response()->json([$request]);
+
+}
+
+public function show(){
+    return response()->json([]);
 }
 
 }

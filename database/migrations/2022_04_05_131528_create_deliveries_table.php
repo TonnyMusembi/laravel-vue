@@ -20,7 +20,6 @@ class CreateDeliveriesTable extends Migration
             $table->timestamps();
         });
     }
-
     /**
      * Reverse the migrations.
      *
