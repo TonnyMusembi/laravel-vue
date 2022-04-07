@@ -33,6 +33,6 @@ class VehicleController extends Controller
     }
     public function destroy(Request $request){
 
-       return response()->json(['']);
+       return response()->json(['$data']);
     }
 }
