@@ -16,7 +16,6 @@ class VehicleController extends Controller
 
     public function store(Request $request){
 
-
         $validator = Validator::make($request->all(), [
             'status' => 'required',
             'order_id' => 'required',
@@ -25,12 +24,15 @@ class VehicleController extends Controller
             return response()->json(['status' => 422, 'errors' => $validator->errors()]);
         } else {
 
-
         Vehicle::create([
             'order_id' => $request->input('order_id'),
             'status' => $request->input('status'),
 
         ]);}
         return response()->json(['req' => $request]);
+    }
+    public function destroy(Request $request){
+
+       return response()->json(['']);
     }
 }

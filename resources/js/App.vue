@@ -41,9 +41,8 @@
             </div>
         </form>
     </div>
-<div>
-    <button class="">Order</button>
-</div>
+<div class="flex justify-center bg-green-500 mx-16 rounded">Download</div>
+<br>
     <!-- </div> -->
 </template>
 <script>
@@ -74,7 +73,6 @@ fetch(url)
         console.log(error);
     });
 
-    const array=[1,2,3,3]
-    console.log(array);
-
+const array = [1, 2, 3, 3];
+console.log(array);
 </script>
