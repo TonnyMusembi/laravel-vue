@@ -15,28 +15,28 @@ class DeliveryController extends Controller
 
     }
     public function  store(Request $request){
-        
-        $delivery = Delivery::create($request->post());
-        return response()->json([
-            'message'=>'Category Created Successfully!!',
-            'delivery'=>$delivery
-        ]);
 
-        //  $validator = Validator::make($request->all(), [
-        //     'status' => 'required',
-        //     'order_id' => 'required',
+        // $delivery = Delivery::create($request->post());
+        // return response()->json([
+        //     'message'=>'Category Created Successfully!!',
+        //     'delivery'=>$delivery
         // ]);
-        // if ($validator->fails()) {
-        //     return response()->json(['status' => 422, 'errors' => $validator->errors()]);
-        // } else {
+
+         $validator = Validator::make($request->all(), [
+            'status' => 'required',
+            'order_id' => 'required',
+        ]);
+        if ($validator->fails()) {
+            return response()->json(['status' => 422, 'errors' => $validator->errors()]);
+        } else {
 
 
-        // Delivery::create([
-        //     'status' => $request->input('status'),
-        //     'order_id' => $request->input('order_id'),
+        Delivery::create([
+            'status' => $request->input('status'),
+            'order_id' => $request->input('order_id'),
 
-        // ]);}
-        // return response()->json(['req' => $request]);
+        ]);}
+        return response()->json(['req' => $request]);
 
 
     }
