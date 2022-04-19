@@ -27,5 +27,3 @@ Route::resource('vehicles', VehicleController::class);
 Route::resource('dashboards', DashboardController::class);
 Route::resource('categories',CategoryController::class);
 Route::resource('deliveries',DeliveryController::class);
-
-
