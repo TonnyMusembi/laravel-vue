@@ -8,7 +8,7 @@
             Login
         </h1>
         <div class="h-0.5 bg-gray-200 w-36 mx-auto mt-2.5"></div>
-        <form action="" method="post">
+        <form action="" method="greet">
             <div class="flex flex-col my-5">
                 <label class="my-2" for="uname">Username</label>
                 <input
@@ -45,7 +45,7 @@
 <br>
     <!-- </div> -->
 </template>
-<script>
+<script >
 import axios from "axios";
 export default {
     data() {

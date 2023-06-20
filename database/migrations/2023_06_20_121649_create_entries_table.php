@@ -16,8 +16,8 @@ class CreateEntriesTable extends Migration
         Schema::create('entries', function (Blueprint $table) {
             $table->id();
             $table->integer('entry_id');
-            $table->varchar('name');
-            $table-> varchar('type');
+            $table->string('name');
+            $table-> string('type');
             $table->timestamps();
         });
     }
