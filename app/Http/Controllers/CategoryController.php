@@ -18,9 +18,9 @@ class CategoryController extends Controller
     public function index(Request $request)
     {
         //returningallitems
-        $categories=Category::all();
+        // $categories=Category::all();
 
-        // $categories = Category::all(['id','title','description']);
+        $categories = Category::all(['id','title','description']);
          return response()->json($categories);
     }
 
@@ -140,7 +140,7 @@ class CategoryController extends Controller
         return response()->json();
     }
 
-    
+
 
 
 }
